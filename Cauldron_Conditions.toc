@@ -1,0 +1,9 @@
+## Interface: 11302
+## Title: Cauldron_Conditions
+## Notes: Cauldron Extension: Enable/disable recipes automatically based on condition.
+## Author: HE Yaowen <he.yaowen@hotmail.com>
+## Version: 1.0.0
+## Dependencies: Cauldron
+
+Cauldron_Conditions.lua
+Conditions.lua
