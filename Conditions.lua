@@ -23,18 +23,6 @@ Cauldron_Conditions_RegisterCondition("characters", { "PLAYER_LOGIN" }, function
     return tContains(params, UnitName("player"))
 end)
 
-Cauldron_Conditions_RegisterCondition("equipmentSets", { "PLAYER_LOGIN", "EQUIPMENT_SWAP_FINISHED" }, function()
-    for i = 1, select("#", params) do
-        local _, _, _, isEquipped = GetEquipmentSetInfo(params[i])
-
-        if isEquipped then
-            return true
-        end
-    end
-
-    return false
-end)
-
 Cauldron_Conditions_RegisterCondition("instances", { "PLAYER_LOGIN", "PARTY_LEADER_CHANGED", "PLAYER_ENTERING_WORLD" }, function(params)
     local _, instanceType = IsInInstance()
     return tContains(params, instanceType)
