@@ -30,7 +30,7 @@ local function ValidateConditions(conditions)
             return false
         end
 
-        result = result and (registeredConditions[name]["validator"](args) ~= nil)
+        result = result and registeredConditions[name]["validator"](args)
     end
 
     return result
